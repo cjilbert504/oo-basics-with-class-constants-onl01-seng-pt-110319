@@ -8,7 +8,7 @@ BRANDS = []
   def initialize(brand)
     @brand = brand
     BRANDS << brand
-    BRANDS.delete_if {|company|company == company}
+    BRANDS.delete_if {|company|company == "nike"}
     BRANDS
   end
 
