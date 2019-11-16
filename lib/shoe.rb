@@ -8,6 +8,9 @@ BRANDS = []
   def initialize(brand)
     @brand = brand
     BRANDS << brand
+    BRANDS.collect do |company|
+      delete_if company == company
+    end
   end
 
   def cobble
