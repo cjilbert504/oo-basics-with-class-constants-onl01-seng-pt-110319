@@ -9,6 +9,7 @@ BRANDS = []
     @brand = brand
     BRANDS << brand
     BRANDS.delete_if {|company|company == company}
+    BRANDS
   end
 
   def cobble
